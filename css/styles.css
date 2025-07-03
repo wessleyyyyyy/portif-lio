@@ -1,0 +1,230 @@
+/* Fonte limpa e reset básico */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111010;
+  color: #333;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+ 
+ 
+}
+
+
+/* Estiliza todos os blocos principais */
+.container {
+  background-color: #b1b6b6;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 20px;
+  flex: 1;
+}
+
+
+/* Cabeçalho com estilo diferenciado */
+.header {
+  background-color: #b1b6b6;
+  text-align: center;
+  max-width: 700px;     /* limita a largura máxima */
+  margin: 20px auto;    /* centraliza horizontalmente */
+  padding: 30px;
+}
+
+
+.hdcontainer {
+ 
+    background-color: #b1b6b6;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    flex: 1 1 45%;  /* flex-grow, flex-shrink e largura base para cerca de metade */
+    max-width: 700px;
+    box-sizing: border-box; /* para o padding não aumentar a largura */
+}
+
+
+.hdcontainer-wrapper {
+  display: flex;
+  flex-wrap: wrap;        /* permite quebrar linha se não couber */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 20px;              /* espaço entre os containers */
+  max-width: 1200px;      /* largura máxima do grupo */
+  margin: 0 auto;         /* centraliza o grupo na página */
+  padding: 20px;
+}
+
+
+
+
+/* Layout principal com flexbox */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Estilo das listas */
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+
+li {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+
+/* Responsividade: para telas pequenas */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+
+  .container {
+    margin: 10px;
+  }
+
+
+  h1 {
+    font-size: 24px;
+  }
+
+
+  h2 {
+    font-size: 20px;
+  }
+
+
+  h3 {
+    font-size: 20px;
+  }
+
+
+  li {
+    font-size: 16px;
+  }
+}
+
+
+.separador {
+  border: none;
+  height: 4px;
+  background-color: #81a69f;
+  margin: 0 auto 20px auto; /* Centraliza a linha horizontalmente */
+  border-radius: 4px;
+  width: 65%; /* Ajuste a largura para o tamanho que quiser */
+}
+
+
+
+
+.container h3 {
+  text-align: center;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: #7ba0a2;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: #5f8485;
+}
+
+
+/* Inputs e botões com largura completa para melhor usabilidade */
+input,
+button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: cadetblue;
+  color: rgb(1, 25, 46);
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+  background-color: rgb(72, 133, 133);
+}
+
+
+#resultado {
+  margin-top: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* Fundo das partículas: ocupando toda a tela e atrás do conteúdo */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* fica atrás do conteúdo */
+}
+
+
+.top-footer {
+  background-color: #808080;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* ou outra fonte */
+  font-size: 16px;
+  border-bottom: 2px solid #5f8485;
+}
+
+
+footer {
+  background-color: #b1b6b6;     /* Fundo escuro */
+  color: white;                   /* Texto branco */
+  text-align: center;             /* Centralizar texto */
+  padding: 15px 0;                /* Espaçamento acima e abaixo */
+  font-size: 16px;                /* Tamanho da fonte */
+  margin-top: 40px;               /* Espaço acima do footer */
+  border-radius: 0 0 12px 12px;  /* Bordas arredondadas embaixo */
+  font-family: 'Caveat', cursive, sans-serif;
+}

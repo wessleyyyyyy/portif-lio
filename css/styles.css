@@ -59,7 +59,7 @@ body {
 
 
 
-/* Layout principal com flexbox */
+/* Layout principal com flexbox, serve para deixar os dois conatiner de cima separados */
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -210,11 +210,12 @@ button:hover {
 .top-footer {
   background-color: #808080;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 30px;
   text-align: center;
   font-family: 'Comic Sans MS', cursive, sans-serif; /* ou outra fonte */
   font-size: 16px;
   border-bottom: 2px solid #5f8485;
+  margin-top: 0px;  
 }
 
 
@@ -222,9 +223,22 @@ footer {
   background-color: #b1b6b6;     /* Fundo escuro */
   color: white;                   /* Texto branco */
   text-align: center;             /* Centralizar texto */
-  padding: 15px 0;                /* Espaçamento acima e abaixo */
+  padding: 20px 30px;                /* Espaçamento acima e abaixo */
   font-size: 16px;                /* Tamanho da fonte */
-  margin-top: 40px;               /* Espaço acima do footer */
-  border-radius: 0 0 12px 12px;  /* Bordas arredondadas embaixo */
+  margin-top: 120px;               /* Espaço acima do footer */
+  border-radius: 0 0 0px 0px;  /* Bordas arredondadas embaixo */
   font-family: 'Caveat', cursive, sans-serif;
+  width: 100%;     /* ⬅ Garante largura total */
+  max-width: none;     /* ⬅ Remove qualquer limite herdado */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > footer {
+  margin-top: auto;
 }

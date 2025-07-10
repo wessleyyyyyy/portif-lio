@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* fonte */
+    background: linear-gradient(#677f97); /* cor do fundo */
+    display: flex; /* flex container*/
+    justify-content: center; /* conteudo centralizado horizontalmente*/
+    align-items: center; /*conteudo centralizado verticalmente */
+    font-size: 25px; /* aumenta o tamanho da fonte do texto */
+     height: 100vh;  /* ESSENCIAL para centralizar verticalmente */
+}
+
+.loginContainer{
+    background-color: #ccd0dc;
+    padding: 40px 50px;   /* 20px topo/baixo, 50px direita/esquerda */
+    width: 500px;
+    text-align: center;
+    border-radius:50px ; /*deixa as bordas redondas*/
+    max-height: 90vh; /* para não ultrapassar altura da tela */
+  overflow-y: auto; /* scroll se conteúdo for maior */
+}
+
+button{ /*botão entrar */
+    background-color: #248582; /* Cor de fundo */
+  border: none; /* Sem borda */
+  color: white; /* Cor do texto */
+  padding: 15px 32px; /* Preenchimento */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block; /* Permite largura e altura */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor ao passar o mouse */
+  border-radius: 8px; /* Borda arredondada */
+}
+
+.botao-voltar {   /*botão para voltar para site anterior */
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+form {
+    width: 300px; /* ou ajuste conforme necessário */
+    margin: 10px auto; /* centraliza horizontalmente e adiciona espaço no topo */
+    padding: 20px;
+    background-color: #ccd0dc;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+label {
+    margin-left: -200px; /* move o texto do label para a direita */
+}
+
+#usuario {
+    border: 4px solid #748597; /* borda grossa azul */
+    border-radius: 15px;        /* borda arredondada */
+    padding: 8px 12px;          /* um pouco de espaço interno */
+    outline: none;              /* remove o contorno padrão ao focar */
+}
+
+#senha {
+     border: 4px solid #748597;
+      border-radius: 15px; 
+      padding: 8px 12px;
+      outline: none; 
+}
+
+h2 {
+    margin-top: 40px;   /* empurra o título para baixo */
+}
